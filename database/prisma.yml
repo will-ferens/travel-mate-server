@@ -1,0 +1,10 @@
+#endpoint: ''
+endpoint: https://us1.prisma.sh/willferens/travel-mate/dev
+
+datamodel: datamodel.graphql
+
+secret: poopypoopybuttholes69
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
